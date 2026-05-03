@@ -20,6 +20,12 @@ No matter which AI coding paradigm you work with:
 * AI-Assisted Coding
 * Agentic Coding
 
+## Badge
+
+Use this badge in your project README to signal your carbon-based craftsmanship.
+
+![badge](./assets/badge.svg)
+
 ## License
 
 Released under [CC0 1.0](./LICENSE) — public domain. Use it however you want, no attribution required.
