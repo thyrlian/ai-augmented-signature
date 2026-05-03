@@ -1,10 +1,14 @@
 <svg width="720" height="720" viewBox="0 0 720 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Driven by Human, Augmented by AI Badge</title>
-  <desc id="desc">A circular open-source badge with a serrated outer seal, modern circular text, and the slogan Driven by Human, Augmented by AI.</desc>
+  <desc id="desc">A circular open-source badge with a serrated outer seal, modern circular text, layered ribbon, and the slogan Driven by Human, Augmented by AI.</desc>
 
   <defs>
     <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#111827" flood-opacity="0.18"/>
+    </filter>
+
+    <filter id="ribbonShadow" x="-20%" y="-25%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#111827" flood-opacity="0.22"/>
     </filter>
 
     <linearGradient id="ribbonGradient" x1="0" y1="0" x2="1" y2="1">
@@ -12,12 +16,16 @@
       <stop offset="100%" stop-color="#b91c1c"/>
     </linearGradient>
 
+    <linearGradient id="ribbonTailGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b91c1c"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+
     <linearGradient id="sealRingGradient" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#d1d5db"/>
       <stop offset="100%" stop-color="#9ca3af"/>
     </linearGradient>
 
-    <!-- Top spacing kept as before. Bottom spacing increased slightly by moving text inward. -->
     <path id="topArcText" d="M 175 360 A 185 185 0 0 1 545 360"/>
     <path id="bottomArcText" d="M 162 360 A 198 198 0 0 0 558 360"/>
   </defs>
@@ -78,29 +86,37 @@
     </textPath>
   </text>
 
-  <!-- Ribbon tails -->
-  <g filter="url(#softShadow)">
-    <path d="M84 318 h118 v96 H84 l36-48z" fill="#991b1b"/>
-    <path d="M636 318 H518 v96 h118 l-36-48z" fill="#991b1b"/>
+  <!-- Layered ribbon tails, slightly lower and darker for depth -->
+  <g filter="url(#ribbonShadow)">
+    <path d="M36 310 h136 v116 H36 l42-58z" fill="url(#ribbonTailGradient)"/>
+    <path d="M684 310 H548 v116 h136 l-42-58z" fill="url(#ribbonTailGradient)"/>
   </g>
 
-  <!-- Main ribbon -->
-  <rect x="150" y="300" width="420" height="132" rx="4" fill="url(#ribbonGradient)" filter="url(#softShadow)"/>
-  <rect x="164" y="314" width="392" height="104" rx="2" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="3"/>
+  <!-- Fold shadows between tails and central ribbon -->
+  <path d="M96 296 L172 310 L172 426 L96 432 L124 364 Z" fill="#7f1d1d" opacity="0.72"/>
+  <path d="M624 296 L548 310 L548 426 L624 432 L596 364 Z" fill="#7f1d1d" opacity="0.72"/>
+
+  <!-- Wide main ribbon, kept dominant and flat in front -->
+  <rect x="96" y="296" width="528" height="136" rx="4" fill="url(#ribbonGradient)" filter="url(#ribbonShadow)"/>
+  <rect x="114" y="312" width="492" height="104" rx="2" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="3"/>
+
+  <!-- Subtle top highlight and bottom shade on main ribbon -->
+  <path d="M104 304 H616" stroke="#ffffff" stroke-width="3" stroke-opacity="0.16" stroke-linecap="round"/>
+  <path d="M104 424 H616" stroke="#7f1d1d" stroke-width="3" stroke-opacity="0.22" stroke-linecap="round"/>
 
   <!-- Main slogan -->
-  <text x="360" y="353" text-anchor="middle"
+  <text x="360" y="351" text-anchor="middle"
         font-family="'Segoe Script', 'Bradley Hand', 'Comic Sans MS', cursive"
-        font-size="38"
+        font-size="40"
         font-weight="700"
         letter-spacing="0.5"
         fill="#fff7ed">
     Driven by Human
   </text>
 
-  <text x="360" y="398" text-anchor="middle"
+  <text x="360" y="399" text-anchor="middle"
         font-family="'Courier New', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="28"
+        font-size="30"
         font-weight="700"
         letter-spacing="1.4"
         fill="#e0f2fe">
