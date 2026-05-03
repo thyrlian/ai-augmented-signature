@@ -1,0 +1,109 @@
+<svg width="720" height="720" viewBox="0 0 720 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Driven by Human, Augmented by AI Badge</title>
+  <desc id="desc">A circular open-source badge with a serrated outer seal, modern circular text, and the slogan Driven by Human, Augmented by AI.</desc>
+
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#111827" flood-opacity="0.18"/>
+    </filter>
+
+    <linearGradient id="ribbonGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e34a4a"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+
+    <linearGradient id="sealRingGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d1d5db"/>
+      <stop offset="100%" stop-color="#9ca3af"/>
+    </linearGradient>
+
+    <!-- Top spacing kept as before. Bottom spacing increased slightly by moving text inward. -->
+    <path id="topArcText" d="M 175 360 A 185 185 0 0 1 545 360"/>
+    <path id="bottomArcText" d="M 162 360 A 198 198 0 0 0 558 360"/>
+  </defs>
+
+  <rect width="720" height="720" fill="#ffffff"/>
+
+  <!-- Serrated outer seal -->
+  <path fill="url(#sealRingGradient)" d="
+    M 360.0 84.0 L 371.3 100.2 L 384.1 85.1 L 393.9 102.2 L 407.9 88.2 L 416.3 106.2
+    L 431.4 93.4 L 438.2 112.0 L 454.4 100.6 L 459.5 119.8 L 476.6 109.9 L 480.1 129.4
+    L 498.0 121.0 L 499.7 140.7 L 518.3 133.9 L 518.3 153.7 L 537.4 148.6 L 535.7 168.3
+    L 555.2 164.8 L 551.7 184.3 L 571.4 182.6 L 566.3 201.7 L 586.1 201.7 L 579.3 220.3
+    L 599.0 222.0 L 590.6 239.9 L 610.1 243.4 L 600.2 260.5 L 619.4 265.6 L 608.0 281.8
+    L 626.6 288.6 L 613.8 303.7 L 631.8 312.1 L 617.8 326.1 L 634.9 335.9 L 619.8 348.7
+    L 636.0 360.0 L 619.8 371.3 L 634.9 384.1 L 617.8 393.9 L 631.8 407.9 L 613.8 416.3
+    L 626.6 431.4 L 608.0 438.2 L 619.4 454.4 L 600.2 459.5 L 610.1 476.6 L 590.6 480.1
+    L 599.0 498.0 L 579.3 499.7 L 586.1 518.3 L 566.3 518.3 L 571.4 537.4 L 551.7 535.7
+    L 555.2 555.2 L 535.7 551.7 L 537.4 571.4 L 518.3 566.3 L 518.3 586.1 L 499.7 579.3
+    L 498.0 599.0 L 480.1 590.6 L 476.6 610.1 L 459.5 600.2 L 454.4 619.4 L 438.2 608.0
+    L 431.4 626.6 L 416.3 613.8 L 407.9 631.8 L 393.9 617.8 L 384.1 634.9 L 371.3 619.8
+    L 360.0 636.0 L 348.7 619.8 L 335.9 634.9 L 326.1 617.8 L 312.1 631.8 L 303.7 613.8
+    L 288.6 626.6 L 281.8 608.0 L 265.6 619.4 L 260.5 600.2 L 243.4 610.1 L 239.9 590.6
+    L 222.0 599.0 L 220.3 579.3 L 201.7 586.1 L 201.7 566.3 L 182.6 571.4 L 184.3 551.7
+    L 164.8 555.2 L 168.3 535.7 L 148.6 537.4 L 153.7 518.3 L 133.9 518.3 L 140.7 499.7
+    L 121.0 498.0 L 129.4 480.1 L 109.9 476.6 L 119.8 459.5 L 100.6 454.4 L 112.0 438.2
+    L 93.4 431.4 L 106.2 416.3 L 88.2 407.9 L 102.2 393.9 L 85.1 384.1 L 100.2 371.3
+    L 84.0 360.0 L 100.2 348.7 L 85.1 335.9 L 102.2 326.1 L 88.2 312.1 L 106.2 303.7
+    L 93.4 288.6 L 112.0 281.8 L 100.6 265.6 L 119.8 260.5 L 109.9 243.4 L 129.4 239.9
+    L 121.0 222.0 L 140.7 220.3 L 133.9 201.7 L 153.7 201.7 L 148.6 182.6 L 168.3 184.3
+    L 164.8 164.8 L 184.3 168.3 L 182.6 148.6 L 201.7 153.7 L 201.7 133.9 L 220.3 140.7
+    L 222.0 121.0 L 239.9 129.4 L 243.4 109.9 L 260.5 119.8 L 265.6 100.6 L 281.8 112.0
+    L 288.6 93.4 L 303.7 106.2 L 312.1 88.2 L 326.1 102.2 L 335.9 85.1 L 348.7 100.2 Z"/>
+
+  <!-- Clean circular rings -->
+  <circle cx="360" cy="360" r="255" fill="#d1d5db"/>
+  <circle cx="360" cy="360" r="238" fill="#f7f3e8"/>
+  <circle cx="360" cy="360" r="232" fill="#f7f3e8" stroke="#ffffff" stroke-width="16" filter="url(#softShadow)"/>
+  <circle cx="360" cy="360" r="214" fill="none" stroke="#d1d5db" stroke-width="2"/>
+
+  <!-- Outer principle text -->
+  <text font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif"
+        font-size="22"
+        font-weight="700"
+        letter-spacing="5"
+        fill="#374151">
+    <textPath href="#topArcText" startOffset="50%" text-anchor="middle">
+      HUMAN IN CONTROL
+    </textPath>
+  </text>
+
+  <text font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif"
+        font-size="22"
+        font-weight="700"
+        letter-spacing="5"
+        fill="#374151">
+    <textPath href="#bottomArcText" startOffset="50%" text-anchor="middle">
+      AI ON DEMAND
+    </textPath>
+  </text>
+
+  <!-- Ribbon tails -->
+  <g filter="url(#softShadow)">
+    <path d="M84 318 h118 v96 H84 l36-48z" fill="#991b1b"/>
+    <path d="M636 318 H518 v96 h118 l-36-48z" fill="#991b1b"/>
+  </g>
+
+  <!-- Main ribbon -->
+  <rect x="150" y="300" width="420" height="132" rx="4" fill="url(#ribbonGradient)" filter="url(#softShadow)"/>
+  <rect x="164" y="314" width="392" height="104" rx="2" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="3"/>
+
+  <!-- Main slogan -->
+  <text x="360" y="353" text-anchor="middle"
+        font-family="'Segoe Script', 'Bradley Hand', 'Comic Sans MS', cursive"
+        font-size="38"
+        font-weight="700"
+        letter-spacing="0.5"
+        fill="#fff7ed">
+    Driven by Human
+  </text>
+
+  <text x="360" y="398" text-anchor="middle"
+        font-family="'Courier New', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="28"
+        font-weight="700"
+        letter-spacing="1.4"
+        fill="#e0f2fe">
+    AUGMENTED BY AI
+  </text>
+</svg>
